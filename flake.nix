@@ -1,5 +1,5 @@
 {
-  description = "A very basic flake";
+  description = "Protonhax for nix";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
