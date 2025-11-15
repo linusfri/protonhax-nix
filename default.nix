@@ -13,7 +13,7 @@ pkgs.stdenv.mkDerivation {
     mkdir -p $out/bin
     cat $src/protonhax > $out/bin/protonhax
 
-    sed -i 's|#!/bin/bash|#!${pkgs.bash}/bin/bash|g' $out/bin/protonhax
+    sed -i 's|#!/bin/bash|#!/usr/bin/env bash|g' $out/bin/protonhax
     chmod +x $out/bin/protonhax
   '';
 }
